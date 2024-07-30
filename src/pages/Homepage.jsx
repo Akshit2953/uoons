@@ -12,6 +12,7 @@ import ProductsContainerMII from '../components/ProductsContainerMII';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer'
 import BrandContainer from '../components/BrandContainer';
+import api from '../api';
 
 const Homepage = () => {
 
@@ -34,7 +35,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchHomePageData = async () => {
       try {
-        const response = await axios.get('https://uoons.com/api/homepageData', {
+        const response = await api.get('/api/homepageData', {
           headers: {
             'Content-Type': 'application/json',
             'Accept': '*/*',
