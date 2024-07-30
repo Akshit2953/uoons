@@ -35,6 +35,7 @@ const Homepage = () => {
   useEffect(() => {
     const fetchHomePageData = async () => {
       try {
+        // hello
         const response = await api.get('/api/homepageData', {
           headers: {
             'Content-Type': 'application/json',
